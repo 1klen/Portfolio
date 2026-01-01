@@ -1,5 +1,5 @@
 //_______________обнуление___________
-@import './_nullstyle.scss';
+@use './nullstyle';
 
 $primary: #6C63FF;
 $primary-dark: #4A44C6;
@@ -462,7 +462,6 @@ body {
         color: white;
         
         &:hover {
-            transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba($primary, 0.3);
         }
     }
@@ -475,7 +474,6 @@ body {
         &:hover {
             background: $primary;
             color: white;
-            transform: translateY(-3px);
         }
     }
 }
