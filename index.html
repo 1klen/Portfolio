@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Developer | FinTech Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">Загрузка портфолио...</p>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Dev<span class="logo-highlight">Portfolio</span></a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#achievements" class="nav-link">Достижения</a></li>
+                <li><a href="#tech" class="nav-link">Технологии</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3 class="hero-subtitle">React Trainee Developer</h3>
+                    <h1 class="hero-title">
+                        Привет, я <span class="text-gradient">Лешкевич Вячеслав</span><br>
+                    </h1>
+                    <p class="hero-description">
+                        Специализируюсь на создании современных веб-приложений с использованием React, TypeScript и SCSS. 
+                        Опыт работы в финтех-проектах, включая банковские приложения.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Связаться
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
+                            <i class="fas fa-code"></i> Проекты
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h4>2+</h4>
+                            <p>Года опыта</p>
+                        </div>
+                        <div class="stat">
+                            <h4>15+</h4>
+                            <p>Проектов</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Довольных клиентов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="./img/photo_2026-01-01_18-12-22.jpg" alt="Фото разработчика" class="profile-img">
+                        <div class="image-badge">
+                            <i class="fas fa-code"></i>
+                            <span>В поиске работы</span>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-element el1">React</div>
+                            <div class="floating-element el2">TypeScript</div>
+                            <div class="floating-element el3">FinTech</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="floating-icons">
+            <i class="fab fa-react"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-git-alt"></i>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Опыт <span class="highlight">&</span> Услуги</h2>
+            
+            <div class="about-grid">
+                   <div class="about-card experience">
+                    <div class="card-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Опыт работы</h3>
+                    </div>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023 - Настоящее время</div>
+                            <h4>Frontend Developer (FinTech)</h4>
+                            <p>Разработка банковского приложения WaBank с использованием React и TypeScript.</p>
+                            <ul class="timeline-tags">
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>SCSS</li>
+                                <li>Jira</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022 - 2023</div>
+                            <h4>Junior React Developer</h4>
+                            <p>Участие в разработке финтех-проектов, создание компонентов и интеграция API.</p>
+                            <ul class="timeline-tags">
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Git</li>
+                                <li>REST API</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card services">
+                    <div class="card-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Мои услуги</h3>
+                    </div>
+                    
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Веб-разработка</h4>
+                            <p>Создание адаптивных и современных веб-приложений на React</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Адаптивный дизайн</h4>
+                            <p>Оптимизация под все устройства и браузеры</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4>UI/UX Дизайн</h4>
+                            <p>Создание интуитивных и красивых интерфейсов</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h4>Оптимизация</h4>
+                            <p>Ускорение загрузки и улучшение производительности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Мои <span class="highlight">Достижения</span></h2>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>WaBank Project</h3>
+                    <p>Разработал ключевые компоненты для банковского приложения с нуля</p>
+                    <div class="achievement-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                        <span>90% эффективности</span>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Улучшение производительности</h3>
+                    <p>Оптимизировал загрузку приложения на 40% через lazy loading</p>
+                    <div class="achievement-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                        <span>85% улучшение</span>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Командная работа</h3>
+                    <p>Успешно работал в Agile-команде из 5 разработчиков</p>
+                    <div class="achievement-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%"></div>
+                        </div>
+                        <span>95% коммуникации</span>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Английский B2</h3>
+                    <p>Свободное чтение технической документации и общение в команде</p>
+                    <div class="achievement-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                        <span>Уровень B2</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievements-counter">
+                <div class="counter-item">
+                    <h4 data-count="50">0</h4>
+                    <p>Компонентов создано</p>
+                </div>
+                <div class="counter-item">
+                    <h4 data-count="1000">0</h4>
+                    <p>Часов кодинга</p>
+                </div>
+                <div class="counter-item">
+                    <h4 data-count="15">0</h4>
+                    <p>Проектов завершено</p>
+                </div>
+                <div class="counter-item">
+                    <h4 data-count="5">0</h4>
+                    <p>Технологий освоено</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="technologies">
+        <div class="container">
+            <h2 class="section-title">Стек <span class="highlight">Технологий</span></h2>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Семантическая верстка, доступность, современные API</p>
+                    <div class="skill-level">
+                        <span>Продвинутый</span>
+                        <div class="level-dots">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-sass"></i>
+                    </div>
+                    <h3>SCSS</h3>
+                    <p>Препроцессор, модульность, миксины, переменные</p>
+                    <div class="skill-level">
+                        <span>Продвинутый</span>
+                        <div class="level-dots">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Функциональные компоненты, хуки, контекст, роутинг</p>
+                    <div class="skill-level">
+                        <span>Средний</span>
+                        <div class="level-dots">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>TypeScript</h3>
+                    <p>Типизация, интерфейсы, дженерики, строгий контроль</p>
+                    <div class="skill-level">
+                        <span>Средний</span>
+                        <div class="level-dots">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-jira"></i>
+                    </div>
+                    <h3>Jira</h3>
+                    <p>Agile методологии, управление задачами, спринты</p>
+                    <div class="skill-level">
+                        <span>Средний</span>
+                        <div class="level-dots">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Ветвление, мердж, PR, командная разработка</p>
+                    <div class="skill-level">
+                        <span>Продвинутый</span>
+                        <div class="level-dots">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-visualization">
+                <div class="tech-radar">
+                    <div class="radar-center">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="radar-item item1" data-tech="React">
+                        <span>React</span>
+                    </div>
+                    <div class="radar-item item2" data-tech="TypeScript">
+                        <span>TS</span>
+                    </div>
+                    <div class="radar-item item3" data-tech="SCSS">
+                        <span>SCSS</span>
+                    </div>
+                    <div class="radar-item item4" data-tech="HTML">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="radar-item item5" data-tech="Git">
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Связаться <span class="highlight">со мной</span></h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Давайте создадим что-то вместе!</h3>
+                    <p>Я открыт для новых проектов и возможностей. Свяжитесь со мной, чтобы обсудить ваши идеи.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>klenwork1@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+375(25) 545-83-92</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Локация</h4>
+                                <p>Беларусь, Минск</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Отправить сообщение
+                        </button>
+                    </form>
+                    
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Сообщение отправлено!</h4>
+                        <p>Спасибо за ваше сообщение. Я свяжусь с вами в ближайшее время.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Dev<span class="logo-highlight">Portfolio</span></a>
+                    <p>React Trainee Developer специализирующийся на финтех проектах</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">Опыт</a></li>
+                        <li><a href="#achievements">Достижения</a></li>
+                        <li><a href="#tech">Технологии</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-tech">
+                    <h4>Технологии</h4>
+                    <ul>
+                        <li>HTML5 & SCSS</li>
+                        <li>React & TypeScript</li>
+                        <li>Git & Jira</li>
+                        <li>English B2</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Подписка</h4>
+                    <p>Подпишитесь на обновления о моих проектах</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 React Trainee Portfolio. Все права защищены.</p>
+                <p>Сделано с <i class="fas fa-heart"></i> и <i class="fas fa-code"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
